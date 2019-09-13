@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="trakhak"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-13 02:02:34 PM"/>
+        <attribute name="created" value="dHJha2hhazsxOTIwOUNORDgyNTkzSzQ7MjAxOS0wOS0xMzswMjowMjowNyBQTTsyODkw"/>
+        <attribute name="edited" value="dHJha2hhazsxOTIwOUNORDgyNTkzSzQ7MjAxOS0wOS0xMzswMjowMjozNCBQTTsxOzI5OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>
