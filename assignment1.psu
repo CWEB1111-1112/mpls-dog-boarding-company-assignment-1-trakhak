@@ -1,0 +1,75 @@
+//K.Tran
+START
+
+  DECLARATIONS
+    string breed, name
+    num idNum, age, numWeek, weight
+    num EXIT = -1 //sentinel
+    num RANGE1 = 15, RANGE2 = 30, RANGE3 = 31, RANGE 4 = 80
+    num charge, fee1 = 55, fee2 = 75, fee3 = 105, fee4 = 125, final, DISCOUNT = 125
+    
+    OUTPUT "Welcome to MPLS Dog Boarding Company's Cost Calculator, this program determines the cost of their boarding fee."
+    OUTPUT "Please enter your ID number"
+    INPUT idNum //primer
+    
+    OUTPUT "Input name"
+    INPUT name
+    
+    OUTPUT "Input breed"
+    INPUT breed
+    
+    OUTPUT "Input age"
+    OUTPUT age
+    
+    OUTPUT "Input number of weeks"
+    INPUT numWeek
+    
+    OUTPUT "Input weight number"
+    INPUT weight
+    
+    IF (weight < 14 )
+        charge = fee1
+    ELSE
+        
+        IF (weight < 30)
+            charge = fee2
+            
+            ELSE
+            
+                IF (weight < 80)
+                    charge = fee3
+                    
+                ELSE
+                    charge = fee4
+                ENDIF
+                
+            ENDIF
+            
+        ENDIF
+        
+    ENDIF
+    
+    //Calculating the number of weeks the charge based on dog weight
+    final = charge * numWeek
+    
+    //Check for fee greater than 125
+    IF final > DISCOUNT THEN
+        OUTPUT "You receive 2% discount"
+    ENDIF
+    
+    OUTPUT "For" + idNum
+    OUTPUT "Name:" + name
+    OUTPUT "Breed:" + breed
+    OUTPUT "Age:" + age
+    OUTPUT "Weight" + weight
+    OUTPUT "Number of weeks of care: " + numWeek
+    OUTPUT "Final cost without discount applied" + final
+    
+    OUTPUT "Please enter a new dog id number or " + EXIT + "to end program."
+    INPUT idNum //primer
+
+  ENDWHILE
+  
+  OUTPUT "Program is done."
+  
+STOP
