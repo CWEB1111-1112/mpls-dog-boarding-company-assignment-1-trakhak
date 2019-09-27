@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="trakhak"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-09-27 12:13:54 PM"/>
+        <attribute name="saved" value="2019-09-27 02:50:48 PM"/>
         <attribute name="created" value="dHJha2hhazsxOTIwOUNORDgyNTkzSzQ7MjAxOS0wOS0xNTsxMDowNzoyMCBQTTsyODkx"/>
-        <attribute name="edited" value="dHJha2hhazsxOTIwOUNORDgyNTkzSzQ7MjAxOS0wOS0yNzsxMjoxMzo1NCBQTTsyMjszMDU5"/>
+        <attribute name="edited" value="dHJha2hhazsxOTIwOUNORDgyNTkzSzQ7MjAxOS0wOS0yNzswMjo1MDo0OCBQTTsyNTszMDY1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -23,9 +23,6 @@
             <output expression="&quot;Please enter your ID number&quot;" newline="True"/>
             <input variable="idNum"/>
             <while expression="idNum != EXIT">
-                <output expression="&quot;Welcome to MPLS Dog Boarding Company's Cost Calculator, this program determines the cost of their boarding fee.&quot;" newline="True"/>
-                <output expression="&quot;Please enter your ID number&quot;" newline="True"/>
-                <input variable="idNum"/>
                 <output expression="&quot;Input name&quot;" newline="True"/>
                 <input variable="name"/>
                 <output expression="&quot;Input breed&quot;" newline="True"/>
@@ -67,6 +64,7 @@
                 <output expression="&quot;Number of weeks of care: &quot;&amp;numWeek" newline="True"/>
                 <output expression="&quot;Final cost without discounts applied &quot;&amp;final" newline="True"/>
                 <output expression="&quot;Please enter a new dog id number or -1 to end the program&quot;" newline="True"/>
+                <input variable="idNum"/>
             </while>
             <output expression="&quot;program has ended&quot;" newline="True"/>
         </body>
